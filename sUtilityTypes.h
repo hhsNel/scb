@@ -89,5 +89,21 @@
 #define sut_intptr intptr_t
 #endif
 
+/*
+ $d (sut_uintmax) (maximum width unsigned integer type)
+*/
+#ifndef sut_uintmax
+#include <stdint.h>
+#define sut_uintmax uintmax_t
+#endif
+
+/*
+ $d (sut_uintptr_t) (pointer width unsigned integer type)
+*/
+#ifndef sut_uintptr
+#include <stdint.h>
+#define sut_uintptr uintptr_t
+#endif
+
 #endif
 
