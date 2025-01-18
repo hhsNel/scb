@@ -51,35 +51,9 @@
 #define SU_TARGET_PLATFORM SU_PLATFORM_GENERIC_LINUX
 #endif
 
-/*
- $c
- $B (4) (Specific macros)
- $M (SU_ZERO_STRUCT) (zeros a struct of a given type)
-*/
-#if SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
-#define SU_ZERO_STRUCT(type) {}
-#else
-#define SU_ZERO_STRUCT(type) (type){0}
-#endif
-
-/*
- $M (SU_ZERO_GLOBAL_STRUCT) (zeros a global struct of a given type)
-*/
-#if SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
-#define SU_ZERO_GLOBAL_STRUCT(type) {}
-#else
-#define SU_ZERO_GLOBAL_STRUCT(type) {0}
-#endif
-
-/*
- $c
- $B (4) (Includes)
- $m (sUtilityTypes.h)
- $F
- $m (sUtilityOM.h)
-*/
 #include "sUtilityTypes.h"
 #include "sUtilityOM.h"
+#include "sUtilityMacros.h"
 
 #endif
 
