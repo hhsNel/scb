@@ -7,6 +7,7 @@ Please note that types with prefixes such as 'p-' are deprecated and should
 
 ---
 
+#### Integers, Pointers to integers
 (#defined constant) `sut_int8` - 8 bit wide integer type  
 (#defined constant) `sut_pint8` - pointer to an 8 bit wide integer type  
 (#defined constant) `sut_int16` - 16 bit wide integer type  
@@ -32,6 +33,7 @@ Please note that types with prefixes such as 'p-' are deprecated and should
 
 ---
 
+#### Low level types
 (#defined constant) `sut_byte` - byte data type  
 (#defined constant) `sut_word` - word data type  
 (#defined constant) `sut_dword` - dword data type  
@@ -39,6 +41,15 @@ Please note that types with prefixes such as 'p-' are deprecated and should
 
 ---
 
+#### Discrete types
 (#defined constant) `sut_bool` - boolean data type  
 (#defined constant) `su_true` - boolean constant casting to nonzero values  
 (#defined constant) `su_false` - boolean constant casting to zero  
+
+---
+
+#### Pointers and related types
+(#defined constant) `sut_size` - data size type  
+(#defined constant) `sut_voidptr` - void pointer  
+(#defined constant) `sut_unsafeptr` - an alias of sut_voidptr, used without any checks  
+(#defined constant) `sut_safeptr` - an alias of sut_voidptr, used with checks in place  

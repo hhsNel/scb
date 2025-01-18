@@ -12,6 +12,7 @@
 
 /*
  $c
+ $B (4) (Integers, Pointers to integers)
  $d (sut_int8) (8 bit wide integer type)
  $d (sut_pint8) (pointer to an 8 bit wide integer type)
 */
@@ -132,6 +133,7 @@
 
 /*
  $c
+ $B (4) (Low level types)
  $d (sut_byte) (byte data type)
 */
 #ifndef sut_byte
@@ -161,6 +163,7 @@
 
 /*
  $c
+ $B (4) (Discrete types)
  $d (sut_bool) (boolean data type)
  $d (su_true) (boolean constant casting to nonzero values)
  $d (su_false) (boolean constant casting to zero)
@@ -169,6 +172,36 @@
 #define sut_bool sut_int8
 #define su_true (1)
 #define su_false (0)
+#endif
+
+/*
+ $c
+ $B (4) (Pointers and related types)
+ $d (sut_size) (data size type)
+*/
+#ifndef sut_size
+#define sut_size size_t
+#endif
+
+/*
+ $d (sut_voidptr) (void pointer)
+*/
+#ifndef sut_voidptr
+#define sut_voidptr (void*)
+#endif
+
+/*
+ $d (sut_unsafeptr) (an alias of sut_voidptr, used without any checks)
+*/
+#ifndef sut_unsafeptr
+#define sut_unsafeptr sut_voidptr
+#endif
+
+/*
+ $d (sut_safeptr) (an alias of sut_voidptr, used with checks in place)
+*/
+#ifndef sut_safeptr
+#define sut_safeptr sut_voidptr
 #endif
 
 #endif

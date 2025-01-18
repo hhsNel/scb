@@ -7,9 +7,10 @@
 #define S_UTILITY_H
 
 /*
+ $B (4) (QOL)
  $d (SU_SECURITY_WARNINGS_OFF) (turns warnings off on some compilers)
  $d (SU_SECURITY_WARNINGS_ON) (turns warnings on on some compilers)
- $d (SU_SECURITY_WARNINGS) (switches between warnings on/off $(by defining _CRT_SECURE_NO_WARNINGS$). Default is SU_SECURITY_WARNINGS_OFF) 
+ $d (SU_SECURITY_WARNINGS) (switches between warnings on/off $(by defining `_CRT_SECURE_NO_WARNINGS`$). Default is `SU_SECURITY_WARNINGS_OFF`) 
 */
 #define SU_SECURITY_WARNINGS_OFF 0
 #define SU_SECURITY_WARNINGS_ON 1
@@ -23,10 +24,11 @@
 
 
 /*
- $F
+ $c
+ $B (4) (Global options)
  $d (SU_CPP_SYNTAX) (adapts c++ syntax when it varies from c syntax)
  $d (SU_C_SYNTAX) (adapts c syntax when it varies from c++ syntax)
- $d (SU_LANGUAGE_SYNTAX) (switches between c and c++ syntax when they vary. Default is synched with __cplusplus)
+ $d (SU_LANGUAGE_SYNTAX) (switches between c and c++ syntax when they vary. Default is synched with `__cplusplus`)
 */
 #define SU_CPP_SYNTAX 0
 #define SU_C_SYNTAX 1
@@ -39,7 +41,19 @@
 #endif
 
 /*
- $F
+ $d (SU_PLATFORM_GENERIC_LINUX) (uses linux-specific headers when needed)
+ $d (SU_PLATFORM_WINDOWS) (uses windows-specific headers when needed)
+ $d (SU_TARGET_PLATFORM) (uses platform-specific headers when needed. Default is `SU_PLATFORM_GENERIC_LINUX`)
+*/
+#define SU_PLATFORM_GENERIC_LINUX 0
+#define SU_PLATFORM_WINDOWS 1
+#ifndef SU_TARGET_PLATFORM
+#define SU_TARGET_PLATFORM SU_PLATFORM_GENERIC_LINUX
+#endif
+
+/*
+ $c
+ $B (4) (Specific macros)
  $M (SU_ZERO_STRUCT) (zeros a struct of a given type)
 */
 #if SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
@@ -49,7 +63,6 @@
 #endif
 
 /*
- $F
  $M (SU_ZERO_GLOBAL_STRUCT) (zeros a global struct of a given type)
 */
 #if SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
@@ -59,22 +72,14 @@
 #endif
 
 /*
+ $c
+ $B (4) (Includes)
+ $m (sUtilityTypes.h)
  $F
- $M (s_sqrt) (overridable macro pointing to a square root function)
+ $m (sUtilityOM.h)
 */
-#ifndef s_sqrt
-#include <math.h>
-#define s_sqrt sqrt
-#endif
-
-/*
- $F
- $M (s_malloc) (overridable macro pointing to a malloc function)
-*/
-#ifndef s_malloc
-#include <stdlib.h>
-#define s_malloc malloc
-#endif
+#include "sUtilityTypes.h"
+#include "sUtilityOM.h"
 
 #endif
 
