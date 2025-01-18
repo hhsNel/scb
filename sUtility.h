@@ -51,6 +51,14 @@
 #define SU_TARGET_PLATFORM SU_PLATFORM_GENERIC_LINUX
 #endif
 
+/*
+ $B (4) (Included files)
+ $m (sUtilityTypes.h)
+ $F
+ $m (sUtilityOM.h)
+ $F
+ $m (sUtilityMacros.h)
+*/
 #include "sUtilityTypes.h"
 #include "sUtilityOM.h"
 #include "sUtilityMacros.h"

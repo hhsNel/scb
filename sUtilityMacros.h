@@ -7,6 +7,7 @@
 #define S_UTILITY_MACROS_H
 
 /*
+ $M (C vs C++ macros)
  $M (SU_ZERO_STRUCT) (zeros a struct of a given type)
 */
 #if SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
@@ -25,6 +26,7 @@
 #endif
 
 /*
+ $B (4) (String operations)
  $M (SCONCAT) (concatenates two values without evaluating them)
 */
 #ifndef SCONCAT
@@ -81,10 +83,19 @@
 #endif
 
 /*
+ $B (4) (Utility macros)
  $M (SEVAL) (evaluates the argument)
 */
 #ifndef SEVAL
 #define SEVAL(A) A
+#endif
+
+/*
+ $B (4) (Header file macros)
+ $M (SMAKE_NAME) (makes a unique name from a scope prefix and the function name)
+*/
+#ifndef SMAKE_NAME
+#define SMAKE_NAME(_PREFIX,_UQ_NAME) SCONCAT3X(_PREFIX,_,_UQ_NAME)
 #endif
 
 #endif
