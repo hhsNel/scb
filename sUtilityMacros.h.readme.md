@@ -11,3 +11,4 @@
 (Macro) `SCONCAT5X` - evaluates five values, then concatenates them  
 (Macro) `SSTRING` - puts ""s (quotes) around the argument  
 (Macro) `SSTRINGX` - evaluates the argument, then stringifies it  
+(Macro) `SEVAL` - evaluates the argument  

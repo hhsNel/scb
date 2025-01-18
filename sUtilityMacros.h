@@ -80,5 +80,12 @@
 #define SSTRINGX(A) SSTRING(A)
 #endif
 
+/*
+ $M (SEVAL) (evaluates the argument)
+*/
+#ifndef SEVAL
+#define SEVAL(A) A
+#endif
+
 #endif
 

@@ -15,15 +15,3 @@
 (#defined constant) `SU_PLATFORM_GENERIC_LINUX` - uses linux-specific headers when needed  
 (#defined constant) `SU_PLATFORM_WINDOWS` - uses windows-specific headers when needed  
 (#defined constant) `SU_TARGET_PLATFORM` - uses platform-specific headers when needed. Default is `SU_PLATFORM_GENERIC_LINUX`  
-
----
-
-#### Specific macros
-(Macro) `SU_ZERO_STRUCT` - zeros a struct of a given type  
-(Macro) `SU_ZERO_GLOBAL_STRUCT` - zeros a global struct of a given type  
-
----
-
-#### Includes
-sUtilityTypes.h  
-sUtilityOM.h

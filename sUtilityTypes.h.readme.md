@@ -9,47 +9,80 @@ Please note that types with prefixes such as 'p-' are deprecated and should
 
 #### Integers, Pointers to integers
 (#defined constant) `sut_int8` - 8 bit wide integer type  
+(#defined constant) `sint8` - alias of `sut_int8`  
 (#defined constant) `sut_pint8` - pointer to an 8 bit wide integer type  
+(#defined constant) `spint8` - alias of `sut_pint8`  
 (#defined constant) `sut_int16` - 16 bit wide integer type  
+(#defined constant) `sint16` - alias of `sut_int16`  
 (#defined constant) `sut_pint16` - pointer to a 16 bit wide integer type  
+(#defined constant) `spint16` - alias of `sut_pint16`  
 (#defined constant) `sut_int32` - 32 bit wide integer type  
+(#defined constant) `sint32` - alias of `sut_int32`  
 (#defined constant) `sut_pint32` - pointer to a 32 bit wide integer type  
+(#defined constant) `spint32` - alias of `sut_pint32`  
 (#defined constant) `sut_int64` - 64 bit wide integer type  
+(#defined constant) `sint64` - alias of `sut_int64`  
 (#defined constant) `sut_pint64` - pointer to a 64 bit wide integer type  
+(#defined constant) `spint64` - alias of `sut_pint64`  
 (#defined constant) `sut_uint8` - 8 bit wide unsigned integer type  
+(#defined constant) `suint8` - alias of `sut_uint8`  
 (#defined constant) `sut_puint8` - pointer to an 8 bit wide unsigned integer type  
+(#defined constant) `spuint8` - alias of `sut_puint8`  
 (#defined constant) `sut_uint16` - 16 bit wide unsigned integer type  
+(#defined constant) `suint16` - alias of `sut_uint16`  
 (#defined constant) `sut_puint16` - pointer to a 16 bit wide unsigned integer type  
+(#defined constant) `spuint16` - alias of `sut_puint16`  
 (#defined constant) `sut_uint32` - 32 bit wide unsigned integer type  
+(#defined constant) `suint32` - alias of `sut_uint32`  
 (#defined constant) `sut_puint32` - pointer to a 32 bit wide unsigned integer type  
+(#defined constant) `spuint32` - alias of `sut_puint32`  
 (#defined constant) `sut_uint64` - 64 bit wide unsigned integer type  
+(#defined constant) `suint64` - alias of `sut_uint64`  
 (#defined constant) `sut_puint64` - pointer to a 64 bit wide unsigned integer type  
+(#defined constant) `spuint64` - alias of `sut_puint64`  
 (#defined constant) `sut_intmax` - maximum width integer type  
+(#defined constant) `sintmax` - alias of `sut_intmax`  
 (#defined constant) `sut_pintmax` - pointer to a maximum width integer type  
+(#defined constant) `spintmax` - alias of `sut_pintmax`  
 (#defined constant) `sut_intptr` - pointer width integer type  
+(#defined constant) `sintptr` - alias of `sut_intptr`  
 (#defined constant) `sut_uintmax` - maximum width unsigned integer type  
+(#defined constant) `suintmax` - alias of `sut_uintmax`  
 (#defined constant) `sut_puintmax` - pointer to a maximum width unsigned integer type  
+(#defined constant) `spuintmax` - alias of `sut_puintmax`  
 (#defined constant) `sut_uintptr` - pointer width unsigned integer type  
+(#defined constant) `suintptr` - alias of `sut_uintptr`  
 
 ---
 
 #### Low level types
 (#defined constant) `sut_byte` - byte data type  
+(#defined constant) `sbyte` - alias of `sut_byte`  
 (#defined constant) `sut_word` - word data type  
+(#defined constant) `sword` - alias of `sut_word`  
 (#defined constant) `sut_dword` - dword data type  
+(#defined constant) `sdword` - alias of `sut_dword`  
 (#defined constant) `sut_qword` - qword data type  
+(#defined constant) `sqword` - alias of `sut_qword`  
 
 ---
 
 #### Discrete types
 (#defined constant) `sut_bool` - boolean data type  
+(#defined constant) `sbool` - alias of `sut_bool`  
 (#defined constant) `su_true` - boolean constant casting to nonzero values  
+(#defined constant) `strue` - alias of `su_true`  
 (#defined constant) `su_false` - boolean constant casting to zero  
+(#defined constant) `sfalse` - alias of `su_false`  
 
 ---
 
 #### Pointers and related types
 (#defined constant) `sut_size` - data size type  
+(#defined constant) `ssize` - alias of `sut_size`  
 (#defined constant) `sut_voidptr` - void pointer  
+(#defined constant) `svoidptr` - alias of `sut_voidptr`  
 (#defined constant) `sut_unsafeptr` - an alias of sut_voidptr, used without any checks  
+(#defined constant) `sunsafeptr` - alias of `sut_unsafeptr`  
 (#defined constant) `sut_safeptr` - an alias of sut_voidptr, used with checks in place  
+(#defined constant) `ssafeptr` - alias of `sut_safeptr`  
