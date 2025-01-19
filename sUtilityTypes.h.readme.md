@@ -86,3 +86,50 @@ Please note that types with prefixes such as 'p-' are deprecated and should
 (#defined constant) `sunsafeptr` - alias of `sut_unsafeptr`  
 (#defined constant) `sut_safeptr` - an alias of sut_voidptr, used with checks in place  
 (#defined constant) `ssafeptr` - alias of `sut_safeptr`  
+
+---
+
+#### Built-in data types
+(#defined constant) `sut_int` - built-in int  
+(#defined constant) `sint` - alias of `sut_int`  
+(#defined constant) `sut_uint` - built-in unsigned int  
+(#defined constant) `suint` - alias of `sut_uint`  
+(#defined constant) `sut_shortint` - built-in short int  
+(#defined constant) `sshortint` - alias of `sut_shortint`  
+(#defined constant) `sut_ushortint` - built-in unsigned short int  
+(#defined constant) `sushortint` - alias of `sut_ushortint`  
+(#defined constant) `sut_longint` - built-in long int  
+(#defined constant) `slongint` - alias of `sut_longint`  
+(#defined constant) `sut_ulongint` - built-in unsigned long int  
+(#defined constant) `sulongint` - alias of `sut_ulongint`  
+(#defined constant) `sut_longlongint` - built-in long long int  
+(#defined constant) `sut_llint` - alias of `sut_longlongint`  
+(#defined constant) `slonglongint` - alias of `sut_longlongint`  
+(#defined constant) `sllint` - alias of `sut_longlongint`  
+(#defined constant) `sut_ulonglongint` - built-in unsigned long long int  
+(#defined constant) `sut_ullint` - alias of `sut_ulonglongint`  
+(#defined constant) `sulonglongint` - alias of `sut_ulonglongint`  
+(#defined constant) `sullint` - alias of `sut_ulonglongint`  
+
+---
+
+#### Cheat sheet
+| Name | Alias (es) | Length (Bits) | Length (Bytes) | Signed? | 
+| --- | --- | --- | --- | --- | 
+| sut_int8 | sint8 | 8 | 1 | 0 | 
+| sut_uint8 | suint8 | 8 | 1 | 1 | 
+| sut_int16 | sint16 | 16 | 2 | 0 | 
+| sut_uint16 | suint16 | 16 | 2 | 1 | 
+| sut_int32 | sint32 | 32 | 4 | 0 | 
+| sut_uint32 | suint32 | 32 | 4 | 1 | 
+| sut_int64 | sint64 | 64 | 8 | 0 | 
+| sut_uint64 | suint64 | 64 | 8 | 1 | 
+| sut_byte | sbyte | 8 | 1 | 1 | 
+| sut_word | sword | 16 | 2 | 1 | 
+| sut_dword | sdword | 32 | 4 | 1 | 
+| sut_qword | sqword | 64 | 8 | 1 | 
+| sut_bool | sbool | 8 (Min 1) | 1 | - | 
+| sut_size | ssize | - | - | 0 | 
+| sut_voidptr | svoidptr | - | - | - | 
+| sut_unsafeptr | sunsafeptr | - | - | - | 
+| sut_safeptr | ssafeptr | - | - | - | 

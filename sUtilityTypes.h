@@ -267,5 +267,115 @@
 #endif
 #define ssafeptr sut_safeptr
 
+/*
+ $c
+ $B (4) (Built-in data types)
+ $d (sut_int) (built-in int)
+ $d (sint) (alias of `sut_int`)
+*/
+#ifndef sut_int
+#define sut_int int
+#endif
+#define sint sut_int
+
+/*
+ $d (sut_uint) (built-in unsigned int)
+ $d (suint) (alias of `sut_uint`)
+*/
+#ifndef sut_uint
+#define sut_uint unsigned int
+#endif
+#define suint sut_uint
+
+/*
+ $d (sut_shortint) (built-in short int)
+ $d (sshortint) (alias of `sut_shortint`)
+*/
+#ifndef sut_shortint
+#define sut_shortint short int
+#endif
+#define sshortint sut_shortint
+
+/*
+ $d (sut_ushortint) (built-in unsigned short int)
+ $d (sushortint) (alias of `sut_ushortint`)
+*/
+#ifndef sut_ushortint
+#define sut_ushortint unsigned short int
+#endif
+#define sushortint sut_ushortint
+
+/*
+ $d (sut_longint) (built-in long int)
+ $d (slongint) (alias of `sut_longint`)
+*/
+#ifndef sut_longint
+#define sut_longint long int
+#endif
+#define slongint sut_longint
+
+/*
+ $d (sut_ulongint) (built-in unsigned long int)
+ $d (sulongint) (alias of `sut_ulongint`)
+*/
+#ifndef sut_ulongint
+#define sut_ulongint unsigned long int
+#endif
+#define sulongint sut_ulongint
+
+/*
+ $d (sut_longlongint) (built-in long long int)
+ $d (sut_llint) (alias of `sut_longlongint`)
+ $d (slonglongint) (alias of `sut_longlongint`)
+ $d (sllint) (alias of `sut_longlongint`)
+*/
+#ifndef sut_longlongint
+#define sut_longlongint long long int
+#endif
+#define sut_llint sut_longlongint
+#define slonglongint sut_longlongint
+#define sllint sut_longlongint
+
+/*
+ $d (sut_ulonglongint) (built-in unsigned long long int)
+ $d (sut_ullint) (alias of `sut_ulonglongint`)
+ $d (sulonglongint) (alias of `sut_ulonglongint`)
+ $d (sullint) (alias of `sut_ulonglongint`)
+*/
+#ifndef sut_ulonglongint
+#define sut_ulonglongint unsigned long long int
+#endif
+#define sut_ullint sut_ulonglongint
+#define sulonglongint sut_ulonglongint
+#define sullint sut_ulonglongint
+
+/*
+ $c
+ $B (4) (Cheat sheet)
+
+ $T (5)
+ $h (Name)		$h (Alias $(es$))		$h (Length $(Bits$))		$h (Length $(Bytes$))		$h (Signed?)
+ $t (sut_int8)		$t (sint8)			$t (8)				$t (1)				$t (0)
+ $t (sut_uint8)		$t (suint8)			$t (8)				$t (1)				$t (1)
+ $t (sut_int16)		$t (sint16)			$t (16)				$t (2)				$t (0)
+ $t (sut_uint16)	$t (suint16)			$t (16)				$t (2)				$t (1)
+ $t (sut_int32)		$t (sint32)			$t (32)				$t (4)				$t (0)
+ $t (sut_uint32)	$t (suint32)			$t (32)				$t (4)				$t (1)
+ $t (sut_int64)		$t (sint64)			$t (64)				$t (8)				$t (0)
+ $t (sut_uint64)	$t (suint64)			$t (64)				$t (8)				$t (1)
+
+ $t (sut_byte)		$t (sbyte)			$t (8)				$t (1)				$t (1)
+ $t (sut_word)		$t (sword)			$t (16)				$t (2)				$t (1)
+ $t (sut_dword)		$t (sdword)			$t (32)				$t (4)				$t (1)
+ $t (sut_qword)		$t (sqword)			$t (64)				$t (8)				$t (1)
+
+ $t (sut_bool)		$t (sbool)			$t (8 $(Min 1$))		$t (1)				$t (-)
+ 
+ $t (sut_size)		$t (ssize)			$t (-)				$t (-)				$t (0)
+ $t (sut_voidptr)	$t (svoidptr)			$t (-)				$t (-)				$t (-)
+ $t (sut_unsafeptr)	$t (sunsafeptr)			$t (-)				$t (-)				$t (-)
+ $t (sut_safeptr)	$t (ssafeptr)			$t (-)				$t (-)				$t (-)
+*/
+
 #endif
 
