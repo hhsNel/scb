@@ -1,6 +1,8 @@
 #include "sUtility.h"
-#include <stdio.h>
 #include <stdlib.h>
+
+#define STDIO <stdio.h>
+#include STDIO
 
 int main(int argc, char** argv) {
 	sut_int8 i8 = 8;
