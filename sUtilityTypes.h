@@ -375,6 +375,15 @@
  $t (sut_voidptr)	$t (svoidptr)			$t (-)				$t (-)				$t (-)
  $t (sut_unsafeptr)	$t (sunsafeptr)			$t (-)				$t (-)				$t (-)
  $t (sut_safeptr)	$t (ssafeptr)			$t (-)				$t (-)				$t (-)
+
+ $t (sut_shortint)	$t (sshortint)			$t (-)				$t (-)				$t (1)
+ $t (sut_ushortint)	$t (sushortint)			$t (-)				$t (-)				$t (0)
+ $t (sut_int)		$t (sint)			$t (-)				$t (-)				$t (1)
+ $t (sut_uint)		$t (suint)			$t (-)				$t (-)				$t (0)
+ $t (sut_longint)	$t (slongint)			$t (-)				$t (-)				$t (1)
+ $t (sut_ulongint)	$t (sulongint)			$t (-)				$t (-)				$t (0)
+ $t (sut_longlongint)	$t (slonglongint, sllint)	$t (-)				$t (-)				$t (1)
+ $t (sut_ulonglongint)	$t (sulonglongint, sullint)	$t (-)				$t (-)				$t (0)
 */
 
 #endif

@@ -133,3 +133,11 @@ Please note that types with prefixes such as 'p-' are deprecated and should
 | sut_voidptr | svoidptr | - | - | - | 
 | sut_unsafeptr | sunsafeptr | - | - | - | 
 | sut_safeptr | ssafeptr | - | - | - | 
+| sut_shortint | sshortint | - | - | 1 | 
+| sut_ushortint | sushortint | - | - | 0 | 
+| sut_int | sint | - | - | 1 | 
+| sut_uint | suint | - | - | 0 | 
+| sut_longint | slongint | - | - | 1 | 
+| sut_ulongint | sulongint | - | - | 0 | 
+| sut_longlongint | slonglongint, sllint | - | - | 1 | 
+| sut_ulonglongint | sulonglongint, sullint | - | - | 0 | 
