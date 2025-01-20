@@ -114,6 +114,10 @@ Please note that types with prefixes such as 'p-' are deprecated and should
 (#defined constant) `schar` - alias of `sut_char`  
 (#defined constant) `sut_uchar` - built-in unsigned char  
 (#defined constant) `suchar` - alias of `sut_uchar`  
+(#defined constant) `sut_wchar` - built-in wchar_t  
+(#defined constant) `swchar` - alias of `sut_wchar`  
+(#defined constant) `sut_uwchar` - built-in unsigned wchar_t  
+(#defined constant) `suwchar` - alias of `sut_uwchar`  
 
 ---
 

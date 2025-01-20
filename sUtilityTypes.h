@@ -368,6 +368,24 @@
 #define suchar sut_uchar
 
 /*
+ $d (sut_wchar) (built-in wchar_t)
+ $d (swchar) (alias of `sut_wchar`)
+*/
+#ifndef sut_wchar
+#define sut_wchar wchar_t
+#endif
+#define swchar sut_wchar
+
+/*
+ $d (sut_uwchar) (built-in unsigned wchar_t)
+ $d (suwchar) (alias of `sut_uwchar`)
+*/
+#ifndef sut_uwchar
+#define sut_uwchar unsigned wchar_t
+#endif
+#define suwchar sut_uwchar
+
+/*
  $c
  $B (4) (Cheat sheet)
 
