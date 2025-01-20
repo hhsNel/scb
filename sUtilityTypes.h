@@ -350,6 +350,24 @@
 #define sullint sut_ulonglongint
 
 /*
+ $d (sut_char) (built-in char)
+ $d (schar) (alias of `sut_char`)
+*/
+#ifndef sut_char
+#define sut_char char
+#endif
+#define schar sut_char
+
+/*
+ $d (sut_uchar) (built-in unsigned char)
+ $d (suchar) (alias of `sut_uchar`)
+*/
+#ifndef sut_uchar
+#define sut_uchar unsigned char
+#endif
+#define suchar sut_uchar
+
+/*
  $c
  $B (4) (Cheat sheet)
 
