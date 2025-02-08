@@ -29,3 +29,7 @@
 
 #### Header file macros
 (Macro) `SMAKE_NAME` - makes a unique name from a scope prefix and the function name  
+(Macro) `SMAKE_NAMESPACE` - Makes a namespace in C++ syntax, is ommited in C syntax  
+(#defined constant) `S_END_NAMESPACE` - Ends a namespace in C++ syntax, is ommited in C syntax  
+(Macro) `S_JUMP_NAMESPACE` - Jumps to a namespace in C++ syntax, is ommited in C syntax  
+(#defined constant) `S_EXIT_NAMESPACE` - Exits a namespace in C++ syntax, is ommited in C syntax  

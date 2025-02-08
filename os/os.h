@@ -18,7 +18,7 @@ SMAKE_NAMESPACE(os)
 
 S_END_NAMESPACE
 
-#include "os.def.h"
+#include "os.c"
 
 #endif
 
