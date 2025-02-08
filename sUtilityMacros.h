@@ -102,5 +102,41 @@
 #define SMAKE_NAME(_PREFIX,_UQ_NAME) SCONCAT3X(_PREFIX,_,_UQ_NAME)
 #endif
 
+/*
+ $M (SMAKE_NAMESPACE) (Makes a namespace in C++ syntax, is ommited in C syntax)
+*/
+#if SU_LANGUAGE_SYNTAX == SU_C_SYNTAX
+#define SMAKE_NAMESPACE(name)
+#elif SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
+#define SMAKE_NAMESPACE(name) namespace name {
+#endif
+
+/*
+ $d (S_END_NAMESPACE) (Ends a namespace in C++ syntax, is ommited in C syntax)
+*/
+#if SU_LANGUAGE_SYNTAX == SU_C_SYNTAX
+#define S_END_NAMESPACE 
+#elif SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
+#define S_END_NAMESPACE }
+#endif
+
+/*
+ $M (S_JUMP_NAMESPACE) (Jumps to a namespace in C++ syntax, is ommited in C syntax)
+*/
+#if SU_LANGUAGE_SYNTAX == SU_C_SYNTAX
+#define S_JUMP_NAMESPACE(name)
+#elif SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
+#define S_JUMP_NAMESPACE(name) namespace name {
+#endif
+
+/*
+ $d (S_EXIT_NAMESPACE) (Exits a namespace in C++ syntax, is ommited in C syntax)
+*/
+#if SU_LANGUAGE_SYNTAX == SU_C_SYNTAX
+#define S_EXIT_NAMESPACE
+#elif SU_LANGUAGE_SYNTAX == SU_CPP_SYNTAX
+#define S_EXIT_NAMESPAC }
+#endif
+
 #endif
 
