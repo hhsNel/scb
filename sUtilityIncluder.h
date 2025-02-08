@@ -16,6 +16,10 @@ Including this file, you need to specify the following:)
 	 $t (SUI_VARIATE_INTEGER_1)	$t (If SUI_YES, the target will be included four times with SUI_TARGET_INTEGER_1 set to sshortint, sint, slongint, sllint and SUI_TARGET_NAME appended with -s, -l and -ll. If SUI_NO, SUI_TARGET_INTEGER_1 will be SUI_DEFAULT_INTEGER_1)
 	 $t (SUI_VARIATE_INTEGER_2)	$t (If SUI_YES, the target will be included four times with SUI_TARGET_INTEGER_2 set to sshortint, sint, slongint, sllint and SUI_TARGET_NAME appended with -s, -l and -ll. If SUI_NO, SUI_TARGET_INTEGER_2 will be SUI_DEFAULT_INTEGER_2)
 	 $t (SUI_VARIATE_INTEGER_3)	$t (If SUI_YES, the target will be included four times with SUI_TARGET_INTEGER_3 set to sshortint, sint, slongint, sllint and SUI_TARGET_NAME appended with -s, -l and -ll. If SUI_NO, SUI_TARGET_INTEGER_3 will be SUI_DEFAULT_INTEGER_3)
+	 $t (SUI_TARGET_TYPE_0)		$t(Any type. Used by the target)
+	 $t (SUI_TARGET_TYPE_1)		$t(Any type. Used by the target)
+	 $t (SUI_TARGET_TYPE_2)		$t(Any type. Used by the target)
+	 $t (SUI_TARGET_TYPE_3)		$t(Any type. Used by the target)
 */
 
 #ifndef SUI_YES

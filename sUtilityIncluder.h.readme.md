@@ -16,3 +16,7 @@ Including this file, you need to specify the following:
 | SUI_VARIATE_INTEGER_1 | If SUI_YES, the target will be included four times with SUI_TARGET_INTEGER_1 set to sshortint, sint, slongint, sllint and SUI_TARGET_NAME appended with -s, -l and -ll. If SUI_NO, SUI_TARGET_INTEGER_1 will be SUI_DEFAULT_INTEGER_1 | 
 | SUI_VARIATE_INTEGER_2 | If SUI_YES, the target will be included four times with SUI_TARGET_INTEGER_2 set to sshortint, sint, slongint, sllint and SUI_TARGET_NAME appended with -s, -l and -ll. If SUI_NO, SUI_TARGET_INTEGER_2 will be SUI_DEFAULT_INTEGER_2 | 
 | SUI_VARIATE_INTEGER_3 | If SUI_YES, the target will be included four times with SUI_TARGET_INTEGER_3 set to sshortint, sint, slongint, sllint and SUI_TARGET_NAME appended with -s, -l and -ll. If SUI_NO, SUI_TARGET_INTEGER_3 will be SUI_DEFAULT_INTEGER_3 | 
+| SUI_TARGET_TYPE_0 | Any type. Used by the target | 
+| SUI_TARGET_TYPE_1 | Any type. Used by the target | 
+| SUI_TARGET_TYPE_2 | Any type. Used by the target | 
+| SUI_TARGET_TYPE_3 | Any type. Used by the target | 
