@@ -5,16 +5,28 @@
 SMAKE_NAMESPACE(os)
 
 	/*
-	 $f (svoidptr const) (heap_alloc)
-	 $a (ssize) (chunk_size) (size to be allocated on the heap)
-	 $a (sword) (flags) (additional flags)
+	 $f (svoidptr const) (vmem_alloc)
+	 $a (svoidptr) (address) (preffered starting address of allocated memory)
+	 $a (ssize) (length) (length in bytes of the allocated memory)
+	 $a (sword) (protection) (memory protection of the allocated chunk of memory)
 	*/
-	svoidptr const SMAKE_NAME(S_OS_PREFIX, heap_alloc) (ssize chunk_size, sint8 flags);
+	svoidptr const SMAKE_NAME(S_OS_PREFIX, vmem_alloc) (svoidptr address, ssize length, sword protection);
 	/*
-	 $f (sbool) (heap_free)
-	 $a (svoidptr) (allocated_chunk) (previously allocated memory chunk)
+	 $d (SOS_MEM_PROT_READ) (whether the memory can be read)
+	 $d (SOS_MEM_PROT_WRITE) (whether the memory can be written)
+	 $d (SOS_MEM_PROT_EXEC) (whether the memory can be executed)
+	 $d (SOS_MEM_PROT_NONE) (signifies no access to memory)
 	*/
-	sbool          SMAKE_NAME(S_OS_PREFIX, heap_free)  (svoidptr allocated_chunk);
+	#define SOS_MEM_PROT_READ  0
+	#define SOS_MEM_PROT_WRITE 1
+	#define SOS_MEM_PROT_EXEC  2
+	#define SOS_MEM_PROT_NONE 3
+	/*
+	 $f (sbool) (vmem_free)
+	 $a (svoidptr) (address) (address of a previously allocated memory chunk)
+	 $a (ssize) (length) (length to be unallocated)
+	*/
+	sbool          SMAKE_NAME(S_OS_PREFIX, vmem_free)  (svoidptr address, ssize length);
 
 S_END_NAMESPACE
 
