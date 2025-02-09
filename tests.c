@@ -1,3 +1,4 @@
+#define S_TARGET_OS S_OS_GENERIC_LINUX
 #include "scb.h"
 #include <stdlib.h>
 
