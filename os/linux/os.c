@@ -12,5 +12,9 @@ S_JUMP_NAMESPACE(os)
 		return mmap(address, length, prot, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
 	}
 
+	sbool SMAKE_NAME(S_OS_PREFIX, vmem_free) (svoidptr address, ssize length) {
+		return munmap(address, length);
+	}
+
 S_EXIT_NAMESPACE
 
