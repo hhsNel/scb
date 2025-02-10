@@ -1,4 +1,5 @@
-#define S_TARGET_OS S_OS_GENERIC_LINUX
+//#define SU_TARGET_PLATFORM SU_PLATFORM_GENERIC_LINUX
+#define SU_TARGET_PLATFORM SU_PLATFORM_WINDOWS
 #include "scb.h"
 #include <stdlib.h>
 
