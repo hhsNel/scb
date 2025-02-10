@@ -15,7 +15,7 @@ S_JUMP_NAMESPACE(os)
 	}
 
 	sbool SMAKE_NAME(S_OS_PREFIX, vmem_free) (svoidptr address, ssize length) {
-		return !VirtualFree(address, length, MEM_DECOMMIT | MEM_RELEASE);
+		return !VirtualFree(address, 0, MEM_DECOMMIT | MEM_RELEASE);	// windows can only free whole chunks of memory
 	}
 
 S_EXIT_NAMESPACE
