@@ -28,10 +28,10 @@ SMAKE_NAMESPACE(os)
 	*/
 	sbool          SMAKE_NAME(S_OS_PREFIX, vmem_free)           (svoidptr address, ssize length);
 	/*
-	 $m (	`system_conf.min_vmem_address` - lowest address at which allocation is possible)
-	 $m (	`system_conf.max_vmem_address` - highest address at which allocation is possible)
-	 $m (	`system_conf.page_size` - the physical memory page size)
-	 $m (	`system_conf.vmem_alloc_address_granuality` - the minimum difference of addresses on which the allocation is possible)
+	 $m (`system_conf.min_vmem_address` - lowest address at which allocation is possible  )
+	 $m (`system_conf.max_vmem_address` - highest address at which allocation is possible  )
+	 $m (`system_conf.page_size` - the physical memory page size  )
+	 $m (`system_conf.vmem_alloc_address_granuality` - the minimum difference of addresses on which the allocation is possible  )
 	*/
 	typedef struct SCONCATX(_, SMAKE_NAME(S_OS_PREFIX, system_conf)) {
 		svoidptr min_vmem_address;

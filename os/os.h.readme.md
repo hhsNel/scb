@@ -14,7 +14,7 @@
 		`svoidptr` `address` - address of a previously allocated memory chunk  
 (Argument 1)
 		`ssize` `length` - length to be unallocated  
-	`system_conf.min_vmem_address` - lowest address at which allocation is possible
-	`system_conf.max_vmem_address` - highest address at which allocation is possible
-	`system_conf.page_size` - the physical memory page size
-	`system_conf.vmem_alloc_address_granuality` - the minimum difference of addresses on which the allocation is possible
+`system_conf.min_vmem_address` - lowest address at which allocation is possible  
+`system_conf.max_vmem_address` - highest address at which allocation is possible  
+`system_conf.page_size` - the physical memory page size  
+`system_conf.vmem_alloc_address_granuality` - the minimum difference of addresses on which the allocation is possible  
