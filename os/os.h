@@ -10,7 +10,7 @@ SMAKE_NAMESPACE(os)
 	 $a (ssize) (length) (length in bytes of the allocated memory)
 	 $a (sword) (protection) (memory protection of the allocated chunk of memory)
 	*/
-	svoidptr const SMAKE_NAME(S_OS_PREFIX, vmem_alloc) (svoidptr address, ssize length, sword protection);
+	svoidptr const SMAKE_NAME(S_OS_PREFIX, vmem_alloc)          (svoidptr address, ssize length, sword protection);
 	/*
 	 $d (SOS_MEM_PROT_READ) (whether the memory can be read)
 	 $d (SOS_MEM_PROT_WRITE) (whether the memory can be written)
@@ -26,7 +26,11 @@ SMAKE_NAMESPACE(os)
 	 $a (svoidptr) (address) (address of a previously allocated memory chunk)
 	 $a (ssize) (length) (length to be unallocated)
 	*/
-	sbool          SMAKE_NAME(S_OS_PREFIX, vmem_free)  (svoidptr address, ssize length);
+	sbool          SMAKE_NAME(S_OS_PREFIX, vmem_free)           (svoidptr address, ssize length);
+	/*
+	 f (ssize) (vmem_min_alloc_page)
+	*/
+	ssize const    SMAKE_NAME(S_OS_PREFIX, vmem_min_alloc_page) ();
 
 S_END_NAMESPACE
 
