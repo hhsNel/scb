@@ -14,4 +14,8 @@ S_JUMP_NAMESPACE(os)
 		return VirtualAlloc(address, length, MEM_COMMIT | MEM_RESERVE, prot);
 	}
 
+	sbool SMAKE_NAME(S_OS_PREFIX, vmem_free) (svoidptr address, ssize length) {
+		return !VirtualFree(address, length, MEM_DECOMMIT | MEM_RELEASE);
+	}
+
 S_EXIT_NAMESPACE
