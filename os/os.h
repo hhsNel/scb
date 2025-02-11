@@ -23,10 +23,10 @@ SMAKE_NAMESPACE(os)
 	 $d (SOS_MEM_PROT_EXEC) (whether the memory can be executed)
 	 $d (SOS_MEM_PROT_NONE) (signifies no access to memory)
 	*/
-	#define SOS_MEM_PROT_READ  0
-	#define SOS_MEM_PROT_WRITE 1
-	#define SOS_MEM_PROT_EXEC  2
-	#define SOS_MEM_PROT_NONE 3
+	#define SOS_MEM_PROT_READ  1
+	#define SOS_MEM_PROT_WRITE 2
+	#define SOS_MEM_PROT_EXEC  4
+	#define SOS_MEM_PROT_NONE 8
 	/*
 	 $f (sbool) (vmem_free)
 	 $a (svoidptr) (address) (address of a previously allocated memory chunk)
