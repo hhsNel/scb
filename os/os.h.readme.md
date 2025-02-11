@@ -26,3 +26,6 @@
 `system_conf.max_vmem_address` - highest address at which allocation is possible  
 `system_conf.page_size` - the physical memory page size  
 `system_conf.vmem_alloc_address_granuality` - the minimum difference of addresses on which the allocation is possible  
+(Function) `void` `read_system_conf`  
+(Argument 0)
+		`system_conf *` `conf` - the system configuration is written to this structure  

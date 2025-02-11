@@ -17,6 +17,14 @@ Including this file, you need to specify the following:
 | SUI_VARIATE_INTEGER_2 | If SUI_YES, the target will be included four times with SUI_TARGET_INTEGER_2 set to sshortint, sint, slongint, sllint and SUI_TARGET_NAME appended with -s, -l and -ll. If SUI_NO, SUI_TARGET_INTEGER_2 will be SUI_DEFAULT_INTEGER_2 | 
 | SUI_VARIATE_INTEGER_3 | If SUI_YES, the target will be included four times with SUI_TARGET_INTEGER_3 set to sshortint, sint, slongint, sllint and SUI_TARGET_NAME appended with -s, -l and -ll. If SUI_NO, SUI_TARGET_INTEGER_3 will be SUI_DEFAULT_INTEGER_3 | 
 | SUI_TARGET_TYPE_0 | Any type. Used by the target | 
+| SUI_TARGET_0_SUFFIX | Type 0 suffix | 
 | SUI_TARGET_TYPE_1 | Any type. Used by the target | 
+| SUI_TARGET_1_SUFFIX | Type 1 suffix | 
 | SUI_TARGET_TYPE_2 | Any type. Used by the target | 
+| SUI_TARGET_2_SUFFIX | Type 2 suffix | 
 | SUI_TARGET_TYPE_3 | Any type. Used by the target | 
+| SUI_TARGET_3_SUFFIX | Type 3 suffix | 
+| SUI_VARIATE_PTR_0_SAFETY | If SUI_YES, the target will be included twice with SUI_TARGET_PTR_0 set to ssafeptr and sunsafeptr, and SUI_TARGET_NAME appended with -s and -u. If SUI_NO, SUI_TARGET_PTR_0 will be svoidptr | 
+| SUI_VARIATE_PTR_1_SAFETY | If SUI_YES, the target will be included twice with SUI_TARGET_PTR_1 set to ssafeptr and sunsafeptr, and SUI_TARGET_NAME appended with -s and -u. If SUI_NO, SUI_TARGET_PTR_1 will be svoidptr | 
+| SUI_VARIATE_PTR_2_SAFETY | If SUI_YES, the target will be included twice with SUI_TARGET_PTR_2 set to ssafeptr and sunsafeptr, and SUI_TARGET_NAME appended with -s and -u. If SUI_NO, SUI_TARGET_PTR_2 will be svoidptr | 
+| SUI_VARIATE_PTR_3_SAFETY | If SUI_YES, the target will be included twice with SUI_TARGET_PTR_3 set to ssafeptr and sunsafeptr, and SUI_TARGET_NAME appended with -s and -u. If SUI_NO, SUI_TARGET_PTR_3 will be svoidptr | 
