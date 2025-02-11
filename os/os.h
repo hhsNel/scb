@@ -1,10 +1,16 @@
 #ifndef S_OS_H
 #define S_OS_H
 
+/*
+ $b
+ $B (3) (Operating System dependant functions)
+*/
+
 #define S_OS_PREFIX SCONCATX(SCB_PREFIX, os)
 SMAKE_NAMESPACE(os)
 
 	/*
+	 $B (4) (Memory functions)
 	 $f (svoidptr const) (vmem_alloc)
 	 $a (svoidptr) (address) (preffered starting address of allocated memory)
 	 $a (ssize) (length) (length in bytes of the allocated memory)
@@ -28,6 +34,8 @@ SMAKE_NAMESPACE(os)
 	*/
 	sbool          SMAKE_NAME(S_OS_PREFIX, vmem_free)           (svoidptr address, ssize length);
 	/*
+	 $c
+	 $B (4) (System information functions)
 	 $m (`system_conf.min_vmem_address` - lowest address at which allocation is possible  )
 	 $m (`system_conf.max_vmem_address` - highest address at which allocation is possible  )
 	 $m (`system_conf.page_size` - the physical memory page size  )
