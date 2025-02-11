@@ -47,6 +47,11 @@ SMAKE_NAMESPACE(os)
 		ssize    page_size;
 		ssize    vmem_alloc_address_granuality;
 	} SMAKE_NAME(S_OS_PREFIX, system_conf);
+	/*
+	 $f (void) (read_system_conf)
+	 $a (system_conf *) (conf) (the system configuration is written to this structure)
+	*/
+	void           SMAKE_NAME(S_OS_PREFIX, read_system_conf)      (SMAKE_NAME(S_OS_PREFIX, system_conf) *conf);
 
 S_END_NAMESPACE
 
