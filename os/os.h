@@ -55,7 +55,5 @@ SMAKE_NAMESPACE(os)
 
 S_END_NAMESPACE
 
-#include "os.c"
-
 #endif
 
