@@ -99,7 +99,11 @@
  $M (SMAKE_NAME) (makes a unique name from a scope prefix and the function name)
 */
 #ifndef SMAKE_NAME
+#if SU_LANGUAGE_SYNTAX == SU_C_SYNTAX
 #define SMAKE_NAME(_PREFIX,_UQ_NAME) SCONCAT3X(_PREFIX,_,_UQ_NAME)
+#else
+#define SMAKE_NAME(_PREFIX,_UQ_NAME) _UQ_NAME
+#endif
 #endif
 
 /*
