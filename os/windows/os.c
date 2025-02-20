@@ -18,4 +18,13 @@ S_JUMP_NAMESPACE(os)
 		return !VirtualFree(address, 0, MEM_DECOMMIT | MEM_RELEASE);	// windows can only free whole chunks of memory
 	}
 
+	void SMAKE_NAME(S_OS_PREFIX, read_system_conf) (SMAKE_NAME(S_OS_PREFIX, system_conf) *conf) {
+		SYSTEM_INFO si;
+		GetSystemInfo(&si);
+		conf->min_vmem_address = si.lpMinimumApplicationAddress;
+		conf->max_vmem_address = si.lpMaximumApplicationAddress;
+		conf->page_size = si.dwPageSize;
+		conf->vmem_alloc_address_granularity = si.dwAllocationGranularity;
+	}
+
 S_EXIT_NAMESPACE
