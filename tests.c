@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
 	
 	// memory test
 	svoidptr allocated_chunk = sos_vmem_alloc(NULL, 4*1024, SOS_MEM_PROT_READ | SOS_MEM_PROT_WRITE);
-	printf("Allocated chunk: %p", allocated_chunk);
+	printf("Allocated chunk: %p\n", allocated_chunk);
 
 	strcpy((char *)allocated_chunk, "Hello Vmem Alloc!\n");
 	printf("Message: %s", (char *)allocated_chunk);
@@ -64,4 +64,8 @@ int main(int argc, char** argv) {
 	printf(SSTRING(Hello) SSTRING( World) "7!\n");
 #define HELLO Hello
 	printf(SSTRINGX(HELLO) " World 8 !\n");
+
+	sos_system_conf conf;
+	sos_read_system_conf(&conf);
+	printf("min: %p, max: %p, page: %d, gran: %d\n", conf.min_vmem_address, conf.max_vmem_address, (int)conf.page_size, (int)conf.vmem_alloc_address_granuality);
 }
