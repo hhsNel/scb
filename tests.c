@@ -41,6 +41,8 @@ int main(int argc, char** argv) {
 	float f = s_sqrt(4);
 	
 	// memory test
+	svoidptr allocated_chunk = sos_vmem_alloc(NULL, 4*1024, SOS_MEM_PROT_READ, SOS_MEM_PROT_WRITE);
+	printf("Allocated chunk: %p", allocated_chunk);
 	
 	SCONCAT(print,f)("Hello World!\n");
 #define PRINT print
